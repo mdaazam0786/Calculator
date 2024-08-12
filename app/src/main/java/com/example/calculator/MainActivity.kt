@@ -82,7 +82,7 @@ private fun CalculatorScreen(
                     .fillMaxWidth()
                     .padding(vertical = 32.dp),
                 textAlign = TextAlign.End,
-                color = Color.White
+                color = if(isSystemInDarkTheme()){ Color.White } else Color.Black
             )
             Row(
                 modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround
